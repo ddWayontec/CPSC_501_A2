@@ -1,0 +1,34 @@
+======================================================
+Filename: script5.txt
+Running Test: ClassD
+Recursive: true
+Superclass name: java.lang.Object
+Constructor name: ClassD
+Constructor parameter types: ()
+Constructor modifiers: public
+Constructor name: ClassD
+Constructor parameter types: (int,)
+Constructor modifiers: public
+Method name: toString
+Exceptions method throws: 
+Constructor parameter types: ()
+Method return type: String
+Method modifiers: public
+Method name: getVal3
+Exceptions method throws: 
+Constructor parameter types: ()
+Method return type: int
+Method modifiers: public
+Field name: val
+Field type: ClassA
+Field modifiers: private
+Field name: val2
+Field type: ClassA
+Field modifiers: private static
+Field name: val3
+Field type: int
+Field modifiers: private
+Field name: vallarray
+Field type: ClassA[]
+Field modifiers: private
+======================================================
