@@ -2,9 +2,12 @@
 Filename: script7.txt
 Running Test: [[LClassB;@12a3a380
 Recursive: true
-Superclass name: java.lang.Object
-Interface name: Cloneable
-	No superclass exists
-Interface name: Serializable
-	No superclass exists
+Class name: ClassB[][]
+ Superclass name: java.lang.Object
+ Interface name: Cloneable
+	Class name: Cloneable
+	 No superclass exists
+ Interface name: Serializable
+	Class name: Serializable
+	 No superclass exists
 ======================================================

@@ -12,7 +12,7 @@ public class Inspector {
         if (c == Object.class) {
             return;
         }
-
+        printFormatted("Class name: " + c.getSimpleName(), depth);
         superclassInfo(c, obj, recursive, depth);
         interfaceInfo(c, obj, recursive, depth);
         constructorInfo(c, depth);
@@ -34,18 +34,18 @@ public class Inspector {
     private void superclassInfo(Class c, Object obj, boolean recursive, int depth) {
         Class superClass = c.getSuperclass();
         if (superClass != null) {
-            printFormatted("Superclass name: " + superClass.getName(), depth);
+            printFormatted(" Superclass name: " + superClass.getName(), depth);
             inspectClass(superClass, obj, recursive, depth+1);
         }
         else {
-            printFormatted("No superclass exists", depth);
+            printFormatted(" No superclass exists", depth);
         }
     }
 
     private void interfaceInfo(Class c, Object obj, boolean recursive, int depth) {
         Class<?>[] interfaces = c.getInterfaces();
         for (Class<?> interfce : interfaces) {
-            printFormatted("Interface name: " + interfce.getSimpleName(), depth);
+            printFormatted(" Interface name: " + interfce.getSimpleName(), depth);
             inspectClass(interfce, obj, recursive, depth+1);
         }
     }
@@ -53,22 +53,22 @@ public class Inspector {
     private void constructorInfo(Class c, int depth) {
         Constructor<?>[] constructors = c.getDeclaredConstructors();
         for (Constructor<?> constructor : constructors) {
-            printFormatted("Constructor name: " + constructor.getName(), depth);
+            printFormatted(" Constructor name: " + constructor.getName(), depth);
             Class<?>[] constructorParamTypes = constructor.getParameterTypes();
             String parametertypes = "(";
             for (Class<?> constructorParamtype : constructorParamTypes) {
                 parametertypes += constructorParamtype.getTypeName() + ",";
             }
             parametertypes = parametertypes.substring(0, parametertypes.length()-1) + ")";
-            printFormatted("Constructor parameter types: " + parametertypes, depth);
-            printFormatted("Constructor modifiers: " + Modifier.toString(constructor.getModifiers()), depth);
+            printFormatted(" Constructor parameter types: " + parametertypes, depth);
+            printFormatted(" Constructor modifiers: " + Modifier.toString(constructor.getModifiers()), depth);
         }
     }
 
     private void methodInfo(Class c, int depth) {
         Method[] methods = c.getDeclaredMethods();
         for (Method method : methods) {
-            printFormatted("Method name: " + method.getName(), depth);
+            printFormatted(" Method name: " + method.getName(), depth);
             Class<?>[] exceptionTypes = method.getExceptionTypes();
             String exceptionsThrown = "";
             for (Class<?> exception : exceptionTypes) {
@@ -77,7 +77,7 @@ public class Inspector {
             if (exceptionsThrown.length() >= 2) {
                 exceptionsThrown = exceptionsThrown.substring(0, exceptionsThrown.length()-2);
             }
-            printFormatted("Exceptions method throws: " + exceptionsThrown, depth);
+            printFormatted(" Exceptions method throws: " + exceptionsThrown, depth);
 
             String parametertypes = "(";
             Class<?>[] methodParamTypes = method.getParameterTypes();
@@ -85,11 +85,11 @@ public class Inspector {
                 parametertypes += methodParamtype.getTypeName() + ",";
             }
             parametertypes = parametertypes.substring(0, parametertypes.length()-1) + ")";
-            printFormatted("Method parameter types: " + parametertypes, depth);
+            printFormatted(" Method parameter types: " + parametertypes, depth);
 
-            printFormatted("Method return type: " + method.getReturnType().getSimpleName(), depth);
+            printFormatted(" Method return type: " + method.getReturnType().getSimpleName(), depth);
 
-            printFormatted("Method modifiers: " + Modifier.toString(method.getModifiers()), depth);
+            printFormatted(" Method modifiers: " + Modifier.toString(method.getModifiers()), depth);
         }
     }
 
@@ -97,29 +97,29 @@ public class Inspector {
         Field[] fields = c.getDeclaredFields();
         for (Field field : fields) {
             field.setAccessible(true);
-            printFormatted("Field name: " + field.getName(), depth);
-            printFormatted("Field type: " + field.getType().getSimpleName(), depth);
-            printFormatted("Field modifiers: " + Modifier.toString(field.getModifiers()), depth);
+            printFormatted(" Field name: " + field.getName(), depth);
+            printFormatted(" Field type: " + field.getType().getSimpleName(), depth);
+            printFormatted(" Field modifiers: " + Modifier.toString(field.getModifiers()), depth);
 
             Object object = null;
             try {
                 object = field.get(obj);
             }
             catch (IllegalAccessException e) {
-                printFormatted("Can not access field object", depth);
+                printFormatted(" Can not access field object", depth);
             }
             if (object == null) {
-                printFormatted("Object is null" , depth);
+                printFormatted(" Object is null" , depth);
             }
             else if (object.getClass().isArray()) {
                 handleArray(object.getClass(), object, recursive, depth);
             }
             else if (!object.getClass().isPrimitive() && !recursive) {
-                printFormatted("Reference value: class " + obj.getClass().getSimpleName() + " with identity has code " + obj.hashCode(), depth);
+                printFormatted(" Reference value: class " + obj.getClass().getSimpleName() + " with identity has code " + obj.hashCode(), depth);
 
             }
             else {
-                printFormatted("Object value: " + object, depth);
+                printFormatted(" Object value: " + object, depth);
             }
             //cant recurse into field, this causes stack overflow, not sure why
 //            if (recursive && object != null && !object.getClass().isArray()) {
@@ -131,9 +131,9 @@ public class Inspector {
     }
 
     private void handleArray(Class c, Object obj, boolean recursive, int depth) {
-        printFormatted("Field is array", depth);
-        printFormatted("Array component type: " + c.getComponentType().getTypeName(), depth);
-        printFormatted("Array length: " + Array.getLength(obj), depth);
+        printFormatted(" Field is array", depth);
+        printFormatted(" Array component type: " + c.getComponentType().getTypeName(), depth);
+        printFormatted(" Array length: " + Array.getLength(obj), depth);
         String arrayContent = "[";
         for (int i=0; i<Array.getLength(obj); i++) {
             Object object = Array.get(obj, i);
@@ -145,7 +145,7 @@ public class Inspector {
             }
         }
         arrayContent = arrayContent.substring(0, arrayContent.length()-1) + "]";
-        printFormatted("Array content: " + arrayContent, depth);
+        printFormatted(" Array content: " + arrayContent, depth);
         if (recursive == true) {
             for (int i=0; i<Array.getLength(obj); i++) {
                 Object object = Array.get(obj, i);

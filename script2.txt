@@ -2,57 +2,60 @@
 Filename: script2.txt
 Running Test: ClassA
 Recursive: true
-Superclass name: java.lang.Object
-Interface name: Serializable
-	No superclass exists
-Interface name: Runnable
-	No superclass exists
-	Method name: run
-	Exceptions method throws: 
-	Method parameter types: )
-	Method return type: void
-	Method modifiers: public abstract
-Constructor name: ClassA
-Constructor parameter types: )
-Constructor modifiers: public
-Constructor name: ClassA
-Constructor parameter types: (int)
-Constructor modifiers: public
-Method name: run
-Exceptions method throws: 
-Method parameter types: )
-Method return type: void
-Method modifiers: public
-Method name: toString
-Exceptions method throws: 
-Method parameter types: )
-Method return type: String
-Method modifiers: public
-Method name: setVal
-Exceptions method throws: Exception
-Method parameter types: (int)
-Method return type: void
-Method modifiers: public
-Method name: getVal
-Exceptions method throws: 
-Method parameter types: )
-Method return type: int
-Method modifiers: public
-Method name: printSomething
-Exceptions method throws: 
-Method parameter types: )
-Method return type: void
-Method modifiers: private
-Field name: val
-Field type: int
-Field modifiers: private
-Object value: 12
-Field name: val2
-Field type: double
-Field modifiers: private
-Object value: 0.2
-Field name: val3
-Field type: boolean
-Field modifiers: private
-Object value: true
+Class name: ClassA
+ Superclass name: java.lang.Object
+ Interface name: Serializable
+	Class name: Serializable
+	 No superclass exists
+ Interface name: Runnable
+	Class name: Runnable
+	 No superclass exists
+	 Method name: run
+	 Exceptions method throws: 
+	 Method parameter types: )
+	 Method return type: void
+	 Method modifiers: public abstract
+ Constructor name: ClassA
+ Constructor parameter types: )
+ Constructor modifiers: public
+ Constructor name: ClassA
+ Constructor parameter types: (int)
+ Constructor modifiers: public
+ Method name: run
+ Exceptions method throws: 
+ Method parameter types: )
+ Method return type: void
+ Method modifiers: public
+ Method name: toString
+ Exceptions method throws: 
+ Method parameter types: )
+ Method return type: String
+ Method modifiers: public
+ Method name: setVal
+ Exceptions method throws: Exception
+ Method parameter types: (int)
+ Method return type: void
+ Method modifiers: public
+ Method name: getVal
+ Exceptions method throws: 
+ Method parameter types: )
+ Method return type: int
+ Method modifiers: public
+ Method name: printSomething
+ Exceptions method throws: 
+ Method parameter types: )
+ Method return type: void
+ Method modifiers: private
+ Field name: val
+ Field type: int
+ Field modifiers: private
+ Object value: 12
+ Field name: val2
+ Field type: double
+ Field modifiers: private
+ Object value: 0.2
+ Field name: val3
+ Field type: boolean
+ Field modifiers: private
+ Object value: true
 ======================================================
