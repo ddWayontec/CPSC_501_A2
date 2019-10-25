@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf6f1797-4c18-43bb-afa6-6ae4390b306d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC_501_A2/ClassA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CPSC_501_A2/ClassA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC_501_A2/ClassB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CPSC_501_A2/ClassB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC_501_A2/ClassC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CPSC_501_A2/ClassC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC_501_A2/ClassD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CPSC_501_A2/ClassD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC_501_A2/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CPSC_501_A2/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC_501_A2/Inspector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CPSC_501_A2/Inspector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC_501_A2/InterfaceA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CPSC_501_A2/InterfaceA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC_501_A2/InterfaceB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CPSC_501_A2/InterfaceB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script8.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Inspector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inspector.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,6 +27,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -27,8 +48,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CPSC501-A2-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -66,7 +92,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571527217585</updated>
-      <workItem from="1571527218910" duration="22675000" />
+      <workItem from="1571527218910" duration="33995000" />
+      <workItem from="1572026617567" duration="365000" />
+      <workItem from="1572026986957" duration="3962000" />
+      <workItem from="1572033456635" duration="85000" />
+      <workItem from="1572033549172" duration="66000" />
+      <workItem from="1572033756885" duration="2565000" />
     </task>
     <servers />
   </component>
@@ -78,7 +109,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

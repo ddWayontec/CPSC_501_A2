@@ -6,129 +6,142 @@ Superclass name: ClassC
 	Superclass name: ClassD
 		Superclass name: java.lang.Object
 		Constructor name: ClassD
-		Constructor parameter types: ()
+		Constructor parameter types: )
 		Constructor modifiers: public
 		Constructor name: ClassD
-		Constructor parameter types: (int,)
+		Constructor parameter types: (int)
 		Constructor modifiers: public
 		Method name: toString
 		Exceptions method throws: 
-		Constructor parameter types: ()
+		Method parameter types: )
 		Method return type: String
 		Method modifiers: public
 		Method name: getVal3
 		Exceptions method throws: 
-		Constructor parameter types: ()
+		Method parameter types: )
 		Method return type: int
 		Method modifiers: public
 		Field name: val
 		Field type: ClassA
 		Field modifiers: private
+		Object value: ClassA
 		Field name: val2
 		Field type: ClassA
 		Field modifiers: private static
+		Object is null
 		Field name: val3
 		Field type: int
 		Field modifiers: private
+		Object value: 34
 		Field name: vallarray
 		Field type: ClassA[]
 		Field modifiers: private
+		Field is array
+		Array component type: ClassA
+		Array length: 10
+		Array content: [null,null,null,null,null,null,null,null,null,null]
 	Interface name: InterfaceA
 		No superclass exists
 		Interface name: InterfaceB
 			No superclass exists
 			Method name: func0
-			Exceptions method throws: java.lang.Exception, 
-			Constructor parameter types: (int,boolean,)
+			Exceptions method throws: Exception
+			Method parameter types: (int,boolean)
 			Method return type: void
 			Method modifiers: public abstract
 		Method name: func1
-		Exceptions method throws: java.lang.Exception, 
-		Constructor parameter types: (int,double,boolean,java.lang.String,)
+		Exceptions method throws: Exception
+		Method parameter types: (int,double,boolean,java.lang.String)
 		Method return type: void
 		Method modifiers: public abstract
 		Method name: func2
-		Exceptions method throws: java.lang.Exception, java.lang.ArithmeticException, java.lang.IllegalMonitorStateException, 
-		Constructor parameter types: (java.lang.String,)
+		Exceptions method throws: Exception, ArithmeticException, IllegalMonitorStateException
+		Method parameter types: (java.lang.String)
 		Method return type: int
 		Method modifiers: public abstract
 	Constructor name: ClassC
-	Constructor parameter types: ()
+	Constructor parameter types: )
 	Constructor modifiers: public
 	Constructor name: ClassC
-	Constructor parameter types: (int,int,)
+	Constructor parameter types: (int,int)
 	Constructor modifiers: public
 	Method name: run
 	Exceptions method throws: 
-	Constructor parameter types: ()
+	Method parameter types: )
 	Method return type: void
 	Method modifiers: public
 	Method name: toString
 	Exceptions method throws: 
-	Constructor parameter types: ()
+	Method parameter types: )
 	Method return type: String
 	Method modifiers: public
 	Method name: func3
 	Exceptions method throws: 
-	Constructor parameter types: (int,)
+	Method parameter types: (int)
 	Method return type: void
 	Method modifiers: public abstract
 	Method name: func0
-	Exceptions method throws: java.lang.Exception, 
-	Constructor parameter types: (int,boolean,)
+	Exceptions method throws: Exception
+	Method parameter types: (int,boolean)
 	Method return type: void
 	Method modifiers: public
 	Method name: func1
-	Exceptions method throws: java.lang.Exception, 
-	Constructor parameter types: (int,double,boolean,java.lang.String,)
+	Exceptions method throws: Exception
+	Method parameter types: (int,double,boolean,java.lang.String)
 	Method return type: void
 	Method modifiers: public
 	Method name: func2
-	Exceptions method throws: java.lang.Exception, java.lang.ArithmeticException, java.lang.IllegalMonitorStateException, 
-	Constructor parameter types: (java.lang.String,)
+	Exceptions method throws: Exception, ArithmeticException, IllegalMonitorStateException
+	Method parameter types: (java.lang.String)
 	Method return type: int
 	Method modifiers: public
 	Field name: val2
 	Field type: ClassA
 	Field modifiers: private
+	Object value: ClassA
 	Field name: val3
 	Field type: ClassA
 	Field modifiers: private
+	Object value: ClassA
 	Field name: val4
 	Field type: ClassA
 	Field modifiers: private
+	Object value: ClassA
 Interface name: Runnable
 	No superclass exists
 	Method name: run
 	Exceptions method throws: 
-	Constructor parameter types: ()
+	Method parameter types: )
 	Method return type: void
 	Method modifiers: public abstract
 Constructor name: ClassB
-Constructor parameter types: ()
+Constructor parameter types: )
 Constructor modifiers: public
 Method name: run
 Exceptions method throws: 
-Constructor parameter types: ()
+Method parameter types: )
 Method return type: void
 Method modifiers: public
 Method name: toString
 Exceptions method throws: 
-Constructor parameter types: ()
+Method parameter types: )
 Method return type: String
 Method modifiers: public
 Method name: func3
 Exceptions method throws: 
-Constructor parameter types: (int,)
+Method parameter types: (int)
 Method return type: void
 Method modifiers: public
 Field name: val
 Field type: ClassA
 Field modifiers: private
+Object value: ClassA
 Field name: val2
 Field type: ClassA
 Field modifiers: private
+Object value: ClassA
 Field name: val3
 Field type: ClassA
 Field modifiers: private
+Object is null
 ======================================================
